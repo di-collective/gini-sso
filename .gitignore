@@ -1,0 +1,63 @@
+# ==============================================================================
+# SYSTEM FILES
+# ==============================================================================
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Mengabaikan file backup manual
+*.bak
+*.bac
+*.backup
+
+# ==============================================================================
+# NODE.JS & NEXT.JS (sso-ui)
+# ==============================================================================
+**/node_modules/
+**/dist/
+**/.next/
+**/out/
+**/.pnpm-debug.log*
+
+# Testing & Coverage (Vitest & Cypress)
+**/coverage/
+**/.nyc_output/
+**/.cypress-cache/
+**/cypress/videos/
+**/cypress/screenshots/
+**/screenshots/
+
+# IDEs and Editors
+.idea/
+.vscode/
+*.suo
+*.sw?
+
+# ==============================================================================
+# ENVIRONMENT VARIABLES & SECRETS (SANGAT PENTING)
+# ==============================================================================
+# Mengabaikan semua jenis file .env di folder manapun (sso-ui maupun zitadel)
+**/.env
+**/.env.local
+**/.env.production
+**/.env.development
+**/.env.test
+**/.env.prod
+**/.env.test-integration
+**/.env.test-integration-run-login
+
+# JANGAN abaikan file contoh/template agar tim lain tahu key apa saja yang dibutuhkan
+!**/.env.example
+!**/.env.theme.example
+
+# ==============================================================================
+# DOCKER & ZITADEL DATA VOLUMES
+# ==============================================================================
+# Jika ke depannya docker-compose Anda menyimpan data database (PostgreSQL/CockroachDB) 
+# ke dalam folder lokal, abaikan folder data tersebut agar tidak masuk ke Git.
+**/zitadel-data/
+**/.data/
