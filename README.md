@@ -44,7 +44,7 @@ cd ../sso-ui
 pnpm install
 
 # 3. Copy the example env configuration to the active .env file
-cp .env.theme.example .env
+cp .env.example .env
 ```
 Open the newly created .env file in the sso-ui folder, then configure the variables with the credentials from the Zitadel Console:
 
